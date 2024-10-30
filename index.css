@@ -1,0 +1,450 @@
+
+/* Ajuste o tamanho dos ícones dos controles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo para ícones */
+  border-radius: 50%; /* Ícones circulares */
+}
+
+/* Estilo dos controles anteriores e seguintes */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.9;
+}
+
+/* Estilo dos indicadores do carrossel */
+.carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.5); /* Cor dos indicadores */
+}
+
+.carousel-indicators .active {
+  background-color: #ffffff; /* Cor do indicador ativo */
+  opacity: 1;
+}
+
+/* Estilo das legendas do carrossel */
+.carousel-caption {
+  width: 70%;
+  color: #ffffff; /* Cor do texto da legenda */
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+/* Estilo das transições dos itens do carrossel */
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel {
+    width: 50%; 
+    max-width: 100%; 
+    margin-left: auto;
+    margin-right: a;
+}
+
+.menu {
+    width: 100%;
+    height: 90px;
+    padding: 1%;
+    background-color: rgba(214, 172, 113, 0.808);
+    display: flex; /* Utiliza flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between; /* Distribui os itens */
+  }
+  
+.titulo {
+    color: rgb(78, 56, 0);
+    font-size: 50px;
+    font-family: great vibes;
+    margin-left: 2%;
+    margin-right: 10%; /* Espaço entre o título e o dropdown */
+    margin-top: 10px;
+} 
+
+/* Mudando a cor do botão dropdown */
+/*Utilizando a tag !important faz com que eu consiga sobrescrever a classe do bootstrap*/
+.dropdown-toggle {
+  background-color: #664203 !important; /* Cor de fundo desejada */
+  color: #FFFFFF !important; /* Cor do texto desejada */
+  border: none !important; /* Remove a borda*/
+  transition: background-color 0.3s ease !important; /* Transição suave */
+  border: 2px solid #664203 !important;
+}
+
+.dropdown-toggle:hover {
+  background-color: rgba(95, 62, 4, 0.331) !important; /* Torna o fundo transparente */
+  color: #664203 !important; /* Mude a cor do texto, se desejar */
+}
+
+.carousel {
+  width: 100vw; /* 100% da largura da viewport */
+  margin-left: calc(-50vw + 50%); /* Centraliza o carrossel */
+  position: relative; /* Adiciona posição relativa */
+  margin-top: 1px;
+  border: 3px solid #FFFFFF;
+}
+
+.carousel-item img {
+  width: 100%; /* Garante que a imagem ocupe 100% da largura do item */
+  height: 400px; /* Define a altura desejada */
+  object-fit: cover; /* Ajusta a imagem para preencher a área definida */
+}
+
+.redes {
+  color: rgb(78, 56, 0);
+  margin: 0px; /* Espaço nas laterais */
+  text-align: center; /* Centraliza o texto */
+  font-size: large;
+  margin-top: 0%;
+  margin-left: 25%;
+}
+
+.dropdown {
+  margin-left: auto; /* Afasta o dropdown para a direita */
+}
+
+.wpp {
+  width: 24px; /* Tamanho desejado */
+  height: 24px; /* Tamanho desejado */
+  margin-right: 20px; /* Aumente este valor conforme necessário */
+  vertical-align: middle; /* Alinha verticalmente com o texto */
+  transition: filter 0.3s ease; /* Transição suave */
+}
+
+.whats:hover {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(94%) saturate(5481%) hue-rotate(152deg) brightness(99%) contrast(101%); /* Cor do WhatsApp */
+}
+
+.face:hover {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(100%) saturate(2376%) hue-rotate(199deg) brightness(101%) contrast(101%); /* Cor do Facebook (azul) */
+}
+
+.insta:hover {
+  filter: brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(500%) hue-rotate(327deg) brightness(97%) contrast(101%); /* Cor do Instagram (alaranjado) */
+}
+
+.conteudo{
+    width: 70%; /* Defina a largura do bloco aqui */
+    max-width: 700px; /* Limite a largura máxima */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #66420330;
+    border: 7px solid #b9ab0e26;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 15%;
+}
+
+.conteudo2{
+  width: 70%; /* Defina a largura do bloco aqui */
+  max-width: 700px; /* Limite a largura máxima */
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 15%;
+}
+
+.section {
+  display: flex;
+  align-items: flex-start; /* Alinha os itens na parte superior */
+  justify-content: space-between; /* Espaço entre os itens */
+  padding: 20px; /* Espaçamento interno da seção */
+  margin-bottom: 0px;
+}
+
+.conteudo {
+  flex: 1; /* O texto ocupará o restante do espaço */
+  margin-right: 20px; /* Espaço entre o texto e o vídeo */
+}
+
+.video {
+  max-width: 600px; /* Defina a largura máxima que deseja para a div do vídeo */
+  margin: 20px auto; /* Centraliza a div horizontalmente e adiciona margens verticais */
+  padding: 10px; /* Adiciona algum preenchimento se necessário */
+  text-align: center; /* Centraliza o conteúdo dentro da div */
+}
+
+
+/* Ajuste o tamanho dos ícones dos controles do carrossel para melhor visualização */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem; /* Largura dos ícones */
+  height: 2rem; /* Altura dos ícones */
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo para os ícones */
+  border-radius: 50%; /* Faz com que os ícones sejam circulares */
+}
+
+/* Estilo dos botões de controle do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%; /* Largura dos botões */
+  opacity: 0.5; /* Opacidade padrão dos botões */
+  transition: opacity 0.15s ease; /* Transição suave para mudança de opacidade */
+}
+
+/* Efeito ao passar o mouse sobre os botões de controle */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.9; /* Aumenta a opacidade ao passar o mouse */
+}
+
+/* Estilo dos indicadores do carrossel (pontos que indicam a posição do slide) */
+.carousel-indicators [data-bs-target] {
+  width: 30px; /* Largura dos indicadores */
+  height: 3px; /* Altura dos indicadores */
+  background-color: rgba(255, 255, 255, 0.5); /* Cor dos indicadores */
+}
+
+/* Cor do indicador ativo */
+.carousel-indicators .active {
+  background-color: #ffffff; /* Cor do indicador ativo */
+  opacity: 1; /* Totalmente visível */
+}
+
+/* Estilo das legendas do carrossel */
+.carousel-caption {
+  width: 70%; /* Largura das legendas */
+  color: #ffffff; /* Cor do texto da legenda */
+  padding-top: 1.25rem; /* Espaço acima do texto */
+  padding-bottom: 1.25rem; /* Espaço abaixo do texto */
+}
+
+/* Estilo das transições dos itens do carrossel */
+.carousel-item {
+  transition: transform 0.6s ease-in-out; /* Transição suave ao mudar de slide */
+}
+
+/* Centralização do carrossel na página */
+.carousel {
+    width: 50%; /* Largura do carrossel */
+    max-width: 100%; /* Largura máxima */
+    margin-left: auto; /* Centraliza à esquerda */
+    margin-right: auto; /* Centraliza à direita */
+}
+
+/* Estilo do menu principal */
+.menu {
+    width: 100%; /* Largura total do menu */
+    height: 90px; /* Altura do menu */
+    padding: 1%; /* Espaçamento interno */
+    background-color: rgba(214, 172, 113, 0.808); /* Cor de fundo do menu */
+    display: flex; /* Utiliza flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between; /* Distribui os itens igualmente */
+}
+
+/* Estilo do título principal */
+.titulo {
+    color: rgb(78, 56, 0); /* Cor do texto */
+    font-size: 50px; /* Tamanho da fonte */
+    font-family: great vibes;
+    margin-left: 2%; /* Espaçamento à esquerda */
+    margin-right: 10%; /* Espaçamento à direita */
+    margin-top: 10px; /* Espaçamento acima */
+  } 
+
+.titulo a {
+  text-decoration: none;
+  color: inherit
+}
+  
+/* Estilo do botão dropdown */
+.dropdown-toggle {
+  background-color: #664203 !important; /* Cor de fundo do botão */
+  color: #FFFFFF !important; /* Cor do texto do botão */
+  border: none !important; /* Remove a borda do botão */
+  transition: background-color 0.3s ease !important; /* Transição suave ao passar o mouse */
+  border: 2px solid #664203 !important; /* Borda personalizada */
+}
+
+/* Efeito de hover do botão dropdown */
+.dropdown-toggle:hover {
+  background-color: rgba(95, 62, 4, 0.331) !important; /* Torna o fundo do botão transparente */
+  color: #664203 !important; /* Muda a cor do texto, se desejado */
+}
+
+/* Estilo do carrossel para ocupar toda a largura da tela */
+.carousel {
+  width: 100vw; /* Largura total da viewport */
+  margin-left: calc(-50vw + 50%); /* Centraliza o carrossel na tela */
+  position: relative; /* Adiciona posição relativa para melhor controle */
+  margin-top: 1px; /* Espaço acima do carrossel */
+  border: 3px solid #FFFFFF; /* Borda branca ao redor do carrossel */
+}
+
+/* Estilo das imagens do carrossel */
+.carousel-item img {
+  width: 100%; /* Garante que a imagem ocupe 100% da largura do item */
+  height: 400px; /* Define a altura das imagens */
+  object-fit: cover; /* Ajusta a imagem para preencher a área definida */
+}
+
+/* Estilo para as redes sociais */
+.redes {
+  color: rgb(78, 56, 0); /* Cor do texto das redes sociais */
+  margin: 0px; /* Remove espaços nas laterais */
+  text-align: center; /* Centraliza o texto */
+  font-size: large; /* Tamanho da fonte */
+  margin-top: 0%; /* Remove margens no topo */
+  margin-left: 25%; /* Espaçamento à esquerda */
+}
+
+/* Estilo para o dropdown no menu */
+.dropdown {
+  margin-left: auto; /* Afasta o dropdown para a direita */
+}
+
+/* Estilo dos ícones das redes sociais */
+.wpp {
+  width: 24px; 
+  height: 24px; 
+  margin-right: 20px; /* Espaço à direita do ícone */
+  vertical-align: middle; /* Alinha verticalmente com o texto */
+  transition: filter 0.3s ease; /* Transição suave para mudança de cor */
+}
+
+/* Efeitos de hover para os ícones das redes sociais */
+.whats:hover {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(94%) saturate(5481%) hue-rotate(152deg) brightness(99%) contrast(101%); /* Efeito do WhatsApp */
+}
+
+.face:hover {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(100%) saturate(2376%) hue-rotate(199deg) brightness(101%) contrast(101%); /* Efeito do Facebook */
+}
+
+.insta:hover {
+  filter: brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(500%) hue-rotate(327deg) brightness(97%) contrast(101%); /* Efeito do Instagram */
+}
+
+/* Estilo do conteúdo principal */
+.conteudo {
+    width: 70%; /* Largura do bloco de conteúdo */
+    max-width: 700px; /* Limite de largura máxima */
+    margin: 0 auto; /* Centraliza o bloco */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #66420330; /* Fundo do bloco de conteúdo */
+    border: 7px solid #b9ab0e26; /* Borda do bloco de conteúdo */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do bloco */
+    margin-left: 15%; /* Espaço à esquerda */
+}
+
+/* Estilo do segundo bloco de conteúdo */
+.conteudo2 {
+  width: 70%; /* Largura do bloco */
+  max-width: 700px; /* Limite de largura máxima */
+  margin: 0 auto; /* Centraliza o bloco */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Cantos arredondados */
+  margin-left: 15%; /* Espaço à esquerda */
+}
+
+/* Estilo da seção principal */
+.section {
+  display: flex; /* Utiliza flexbox para disposição dos itens */
+  align-items: flex-start; /* Alinha os itens no topo */
+  justify-content: space-between; /* Distribui espaço entre os itens */
+  padding: 20px; /* Espaçamento interno da seção */
+  margin-bottom: 0px; /* Espaçamento abaixo da seção */
+}
+
+/* Estilo do bloco de texto dentro da seção */
+.conteudo {
+  flex: 1; /* O texto ocupará o restante do espaço */
+  margin-right: 20px; /* Espaço entre o texto e o vídeo */
+}
+
+/* Estilo do bloco de vídeo */
+.video {
+  max-width: 600px; /* Largura máxima da div do vídeo */
+  margin: 20px auto; /* Centraliza a div horizontalmente e adiciona margens verticais */
+  padding: 10px; /* Adiciona algum preenchimento se necessário */
+  text-align: center; /* Centraliza o conteúdo dentro da div */
+}
+
+/* Estilo do iframe do vídeo */
+.video iframe {
+  width: 100%; /* Mantém o iframe responsivo */
+  height: 300px; /* Ajusta a altura do vídeo */
+}
+
+/* Estilo para textos adicionais que aparecem abaixo do vídeo */
+.textoAdicional {
+  margin-top: 20px; /* Espaçamento entre o vídeo e o texto adicional */
+  font-size: 20px; /* Tamanho da fonte do texto */
+  color: #664203; /* Cor do texto */
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 10px; /* Adiciona um preenchimento interno ao texto */
+  background-color: #f9f9f9; /* Cor de fundo do texto adicional */
+  border-radius: 8px; /* Arredonda os cantos do bloco de texto */
+  border: 1px solid #ddd; /* Borda ao redor do texto adicional */
+}
+
+/* Estilo para o logo da doceria */
+.logo {
+    display: flex; /* Utiliza flexbox para centralizar a imagem */
+    align-items: center; /* Centraliza verticalmente a imagem do logo */
+    margin: 20px 0; /* Adiciona uma margem acima e abaixo */
+    margin-left: 46%; /* Centraliza a logo na página */
+}
+
+/* Estilo da imagem do logo */
+.logo img {
+    width: 150px; /* Largura do logo */
+    height: 150px; /* Altura do logo para manter a proporção */
+    border-radius: 50%; /* Faz a imagem do logo ficar redonda */
+    object-fit: cover; /* Garante que a imagem se ajuste ao tamanho definido sem distorção */
+}
+
+/* Estilo para o texto final na página */
+.textoFinal {
+  text-align: center; /* Centraliza o texto final */
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.buy {
+  width: 24px; 
+  height: 24px;
+}
+
+.buyButton {
+  background-color: #66420336;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  position: absolute;
+  left: 80%;
+}
+
+/* Estilo do rodapé da página */
+.footer {
+  background-color: #f2e4d5; /* Cor de fundo do rodapé, em tons de bege */
+  color: #5a4632; /* Cor do texto que contrasta bem com o fundo do rodapé */
+  text-align: center; /* Centraliza o conteúdo do rodapé */
+  padding: 20px; /* Adiciona espaçamento em volta do texto do rodapé */
+  font-size: 14px; /* Tamanho da fonte adequado para rodapé */
+  border-top: 2px solid #d1b290; /* Linha superior para separar o rodapé do conteúdo acima */
+  
+}
+
+/* Estilo da fonte personalizada usando Google Fonts */
+.playpen-sans-bold {
+    font-family: "Playpen Sans", cursive; /* Fonte cursiva personalizada */
+    font-weight: 700; /* Peso da fonte para deixar o texto em negrito */
+    font-style: normal; /* Define o estilo da fonte como normal */
+}

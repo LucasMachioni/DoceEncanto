@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    width: 100%;
+    height: 90px;
+    padding: 1%;
+    background-color: rgba(214, 172, 113, 0.808);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    color: rgb(78, 56, 0);
+    font-size: 50px;
+    font-family: 'Playpen Sans', sans-serif; /* Atualizando para a fonte correta */
+}
+
+.clube {
+    width: 70%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #66420330;
+    border: 5px solid #b9ab0e26;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.clube h2 {
+    color: rgb(78, 56, 0);
+}
+
+.clube p {
+    color: #333;
+}
+
+/* Estilo do formulário */
+.clube form {
+    margin-top: 20px;
+}
+
+.clube input[type="email"] {
+    padding: 10px;
+    border: 2px solid #d6a0a0;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 300px;
+    margin-right: 10px;
+}
+
+.clube button {
+    padding: 10px 20px;
+    background-color: #d6a0a0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clube button:hover {
+    background-color: #c49090;
+}
+
+.footer {
+    background-color: #f2e4d5;
+    color: #5a4632;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 2px solid #d1b290;
+}
